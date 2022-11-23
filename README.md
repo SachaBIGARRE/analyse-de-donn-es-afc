@@ -30,7 +30,13 @@ cr=function(X){
 }
 ```
 
+
 ```{r}
+
+```
+
+```{r}
+
 f = function(N){
   # N=as.matrix(N)
   #(a) calcul des métriques
