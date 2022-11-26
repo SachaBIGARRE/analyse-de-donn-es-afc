@@ -29,6 +29,9 @@ AFC <- function(N){
   Z <- matrix(vec_Z, nrow(N), ncol(N))
   #c. matrice des écarts a l'indépendance X
   X <- (DiInv %*% Z %*% DjInv) - 1
+  
+  ####### J'ai bon jusqu'à là, tu centre réduit pas X ?
+  
   #d. calcul de la matrice V
   V <- t(X) %*% Di %*% X
   #e. vecteurs propres et mise en place de la matrice normee A
